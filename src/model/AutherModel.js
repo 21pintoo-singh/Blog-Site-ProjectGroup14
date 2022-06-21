@@ -17,6 +17,8 @@ const autherSchema = new mongoose.Schema({
     },
     email:{
         type:String,
+        trim:true,
+        lowercase:true,
         required:true,
         unique:true
     },
